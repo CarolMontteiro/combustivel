@@ -1,6 +1,4 @@
 :root {
-
-    /*--color-rgb: rgb(72, 166, 141);*/
     --color-primary:  #000000;
     --color-secondary: #FDBA13;
     --color-tertiary: #242424;
@@ -199,7 +197,7 @@ header .logo-top {
 /*####################################################################################################################*/
 #contact-area {
     padding: 150px 0;
-    background-image: linear-gradient(to right, rgb(81, 185, 158), #006952);
+    background-color: var(--color-primary);
 }
 
 .title-form-contact {
@@ -644,81 +642,38 @@ header .logo-top {
     text-decoration: none;
 }
 
-@media (max-width: 1023px) {
-    /*sobre*/
+@media (max-width: 576px) {
+    #banner {
+        width: 100%;
+    }
+
+    /*######    sobre logo    ######*/
     #about .container {
-        flex-direction: column;
+        display: block;
     }
 
     .about-title {
         width: 100%;
-        padding: 0 30px 30px 30px;
-        order: 2;
+        padding: 10px 15px 0 15px;
     }
 
     .img-about {
-        width: 50%;
-        margin: 0 auto 0 auto;
-        order: 1;
+        display: none;
     }
 
-    /*footer*/
-    .box-footer {
-        width: 50%;
-        padding-right: 40px;
-    }
-
-    .input-box {
-        margin-bottom: 20px;
-    }
-
-    .input-box button {
-        width: 45px;
-    }
-
-    .box-footer .contact-address {
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    /*sobre*/
-    .img-about {
-        width: 100%;
-    }
-
-    /*footer*/
-    .box-footer {
-        width: 100%;
-    }
-
-    /*texte*/
+    /*######    texto com links   ######*/
     #text {
-        background-position: 100% 100%;
-        padding: 180px 0;
+        padding: 50px 0;
     }
 
-    #text .main-p {
-        text-align: center;
-        font-size: 20px;
+    .link-text {
+        padding: 30px 20px 30px 0;
     }
 
-    .box-btn-text {
-        display: block;
-        text-align: center;
-    }
-}
-
-@media (max-width: 630px) {
-    #text {
-        background-color: var(--color-rgb);
-        background-image: none;
-        width: 100%;
-        margin: 60px 0;
-        padding: 120px 0;
+    .link-text a {
+        padding: 15px 20px;
     }
 
-    #text .main-p {
-        font-size: 18px;
-    }
+    /*######    cards de notícias   ######*/
+
 }
