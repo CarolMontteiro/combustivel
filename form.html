@@ -65,34 +65,34 @@
 
 <section id="contact-area">
     <div class="title-form-contact">
-        <h1>Contato</h1>
+        <h1 class="fw-bold text-uppercase">Contato</h1>
         <p>Entre em contato para tirar suas dúvidas, críticas ou sugestões.</p>
     </div>
 
     <div class="container">
-        <div id="other-contact">
-            <h4>Informações para contato</h4>
-            <a href="#"><i class="fa-solid fa-phone"></i>(00) 90000-0000</a>
-            <a href="#"><i class="fa-regular fa-paper-plane"></i>ficticio.net.com</a>
-            <!--            <div id="img-contact">-->
-            <!--                <img src="./image/email.svg" alt="...">-->
-            <!--            </div>-->
-        </div>
+        <div class="d-block d-md-flex">
+            <div id="other-contact">
+                <h4 class="text-uppercase">Informações para contato</h4>
+                <a href="#" class="d-block text-decoration-none"><i class="fa-solid fa-phone"></i>(00) 90000-0000</a>
+                <a href="#" class="d-block text-decoration-none"><i class="fa-regular fa-paper-plane"></i>ficticio.net.com</a>
+            </div>
+            <div id="form-contact">
+                <form action=""
+                      method="post"
+                      class="d-flex flex-column">
+                    <label for="nome" class="fw-medium">Nome</label>
+                    <input id="nome" type="text" name="nome" autocomplete="off" placeholder="Seu nome">
+                    <label for="email" class="fw-medium">E-mail</label>
+                    <input id="email" type="email" name="email" autocomplete="off" placeholder="Seu email">
+                    <label class="fw-medium">Telefone</label>
+                    <input type="tel" name="tel" autocomplete="off" placeholder="Telefone">
+                    <label class="fw-medium">Assunto</label>
+                    <input type="text" name="assunto" autocomplete="off" placeholder="Assunto">
 
-        <div id="form-contact">
-            <form action="" method="post">
-                <label for="nome">Nome</label>
-                <input id="nome" type="text" name="nome" autocomplete="off" placeholder="Seu nome">
-                <label for="email">E-mail</label>
-                <input id="email" type="email" name="email" autocomplete="off" placeholder="Seu email">
-                <label for="tel">Telefone</label>
-                <input type="tel" name="tel" autocomplete="off" placeholder="Telefone">
-                <label for="assunto">Assunto</label>
-                <input type="text" name="assunto" autocomplete="off" placeholder="Assunto">
-
-                <textarea name="Mensagem" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
-                <button type="submit">Enviar e-mail</button>
-            </form>
+                    <textarea name="Mensagem" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+                    <button type="submit" class="fw-bold d-block">Enviar e-mail</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
