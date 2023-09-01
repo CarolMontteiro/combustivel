@@ -312,44 +312,20 @@ header .logo-top {
 /*####################################################################################################################*/
 /*#########################################          CONTEUDO         ##################################################*/
 /*####################################################################################################################*/
-#content {
-    padding: 90px 0;
-}
-
-#content .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-#box-content {
-    width: 70%;
-}
-
-#content-img img {
-    width: 100%;
-}
-
 #content h1 {
-    text-align: center;
     padding: 15px 0;
     color: var(--color-secondary);
 }
 
 #content p {
-    width: 100%;
     text-align: justify;
     line-height: 1.4;
     color: var(--color-primary);
 }
 
-#sidebar-content {
-    width: 25%;
-}
-
 #sidebar-content h3 {
     color: var(--color-primary);
     padding-bottom: 10px;
-    text-align: left;
 }
 
 #sidebar-content a {
@@ -546,11 +522,12 @@ header .logo-top {
 }
 
 @media (max-width: 1320px) {
-    /*######    texto com links   ######*/
+    /* texto com links */
     #text {
         padding: 70px 0;
     }
 
+    /* formulário para contato */
     #other-contact {
         width: 50%;
     }
@@ -558,9 +535,30 @@ header .logo-top {
     #form-contact {
         width: 50%;
     }
+
+    /* conteúdo */
+    #content {
+        padding: 90px 0;
+    }
+    
+    #box-content {
+        width: 70%;
+        margin-right: 5%;
+    }
+
+    #sidebar-content {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1140px) {
+    #content {
+        padding: 0;
+    }
 }
 
 @media (max-width: 992px) {
+    /* sobre */
     .about-title {
         width: 100%;
         padding: 10px 15px 0 15px;
@@ -568,6 +566,7 @@ header .logo-top {
 }
 
 @media (max-width: 720px) {
+    /* formulário para contato */
     #contact-area {
         padding: 50px 0;
     }
@@ -583,10 +582,20 @@ header .logo-top {
     #form-contact {
         width: 100%;
     }
+
+    /* Conteúdo */
+    #box-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #sidebar-content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 540px) {
-    /*######    texto com links   ######*/
+    /* texto com links */
     #text {
         padding: 50px 0;
     }
@@ -598,6 +607,5 @@ header .logo-top {
     .link-text a {
         padding: 15px 20px;
     }
-
 
 }
