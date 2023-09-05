@@ -1,6 +1,5 @@
 *{
     list-style-type: none;
-
 }
 
 :root {
@@ -255,34 +254,15 @@ header .logo-top {
 /*######################################       CATEGORIA DE SRVIÇOS       ############################################*/
 /*####################################################################################################################*/
 #category {
-    padding: 80px 0;
     background-color: var(--color-quaternary);
 }
 
-#category .container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #category h1 {
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
     color: var(--color-primary);
     padding: 30px 0 50px 0;
 }
 
-.img-category {
-    width: 220px;
-}
-
-.img-category img {
-    width: 100%;
-}
-
 #content-category {
-    width: 60%;
-    display: block;
     margin-right: 15%;
 }
 
@@ -294,13 +274,8 @@ header .logo-top {
     padding-bottom: 20px;
 }
 
-.box-category a {
-    text-decoration: none;
-}
-
 .card-category h5 {
     color: var(--color-primary);
-    font-weight: 700;
     padding: 10px;
 }
 
@@ -536,6 +511,11 @@ header .logo-top {
         width: 50%;
     }
 
+    /* categorias */
+    #category {
+        padding: 80px 0;
+    }
+
     /* conteúdo */
     #content {
         padding: 90px 0;
@@ -552,6 +532,12 @@ header .logo-top {
 }
 
 @media (max-width: 1140px) {
+    /* categorias */
+    #category {
+        padding: 0;
+    }
+
+    /* conteúdo */
     #content {
         padding: 0;
     }
@@ -592,6 +578,11 @@ header .logo-top {
     #sidebar-content {
         width: 100%;
     }
+
+    /* categorias */
+    #content-category {
+        width: 100%;
+    }
 }
 
 @media (max-width: 540px) {
@@ -607,5 +598,4 @@ header .logo-top {
     .link-text a {
         padding: 15px 20px;
     }
-
 }
